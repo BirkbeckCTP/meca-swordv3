@@ -1,4 +1,4 @@
-#MECA/SWORDv3 and Janeway
+# MECA/SWORDv3 and Janeway
 
 This repository is the initial specification space for Janeway's work on MECA/SWORDv3.
 
@@ -8,7 +8,7 @@ MECA is the [Manuscript Exchange Common Approach](https://www.niso.org/publicati
 
 The MECA/SWORDv3 working group seeks to fuse the approaches of these two standards, specifically to eradicate the FTP dependency in MECA.
 
-##Janeway Use Cases
+## Janeway Use Cases
 The most prominent use cases for Janeway to interact with MECA/SWORDv3 are:
 
 * Automatic deposit of published articles in external institutional or subject repositories (may require an external registry of such repositories)
@@ -17,7 +17,7 @@ The most prominent use cases for Janeway to interact with MECA/SWORDv3 are:
 
 Janeway could, then, act as both a MECA/SWORDv3 client and server. As a server, it could accept offsite exchanges/interactions. As a client, it could push manuscripts out.
 
-##SWORDv3 expression
+## SWORDv3 expression
 SWORD objects are JSON files and specifically a 'status document' that is returned whenever an operation is made on a SWORD object. The status document makes reference to and passes a set of URLs that contain metadata file paths. For example, the fileset item in the JSON looks like this:
 
     "fileSet" : {
@@ -27,10 +27,10 @@ SWORD objects are JSON files and specifically a 'status document' that is return
 
 The SWORD server as a whole can also return a 'service document' that 'defines the capabilities and operational parameters of the server as a whole, or of a particular Service-URL'.
 
-##Existing SWORDv3 Python clients
+## Existing SWORDv3 Python clients
 [SWORD already provides an existing Python client](https://sword3-clientpy.readthedocs.io/en/latest/). There is also [a common library](https://github.com/swordapp/sword3-common.py) that implements basic object structures for both client and server implementations. There seems to be no reference server implementation at present.
 
-#MECA Specification
+## MECA Specification
 The MECA specification transfers ZIP files between instances, using the naming format {UUID}-meca.zip where {UUID} is a type 1 UUID. The zip file must contain:
 
 1. A "manifest.xml" file that validates against the MECA Manifest DTD (the MECA metadata format).
@@ -39,7 +39,7 @@ The MECA specification transfers ZIP files between instances, using the naming f
 4. An optional "reviews.xml" file that validates against the MECA Reviews DTD (the MECA reviews metadata format).
 5. Content files that contain all the files that make up the submission (e.g. the author's manuscript, any production files).
 
-#Implementation
+# Implementation
 Our proposed implementation can unfold over two stages:
 
 1. Creation of MECA-compatible zip files for articles.
