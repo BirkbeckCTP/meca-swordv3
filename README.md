@@ -2,11 +2,11 @@
 
 This repository is the initial specification space for Janeway's work on MECA/SWORDv3.
 
-MECA is the [Manuscript Exchange Common Approach](https://www.niso.org/publications/rp-30-2020-meca), a NISO standard for handling the exchange of manuscripts between different manuscript workflow systems.
+MECA is the [Manuscript Exchange Common Approach](https://www.niso.org/publications/rp-30-2020-meca), a NISO recommended practice for handling the exchange of manuscripts between different manuscript workflow systems.
 
 [SWORD 3.0](https://swordapp.github.io/swordv3/swordv3.html) "is a protocol enabling clients and servers to communicate around complex digital objects, especially with regard to supporting the deposit of these objects into a service like a digital repository. Complex digital objects consist of both Metadata and File content, where the Files may be in a variety of formats, there may be many files, and some may be very large. The protocol defines semantics for creating, appending, replacing, deleting, and retrieving information about these complex resources. It also enables servers to communicate regarding the status of treatment of deposited content, such as exposing ingest workflow information."
 
-The MECA/SWORDv3 working group seeks to fuse the approaches of these two standards, specifically to eradicate the FTP dependency in MECA.
+The MECA/SWORDv3 working group seeks to fuse the approaches of these two standards, specifically to provide an alternative to the FTP dependency in MECA.
 
 ## Janeway Use Cases
 The most prominent use cases for Janeway to interact with MECA/SWORDv3 are:
